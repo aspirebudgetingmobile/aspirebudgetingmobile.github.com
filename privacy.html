@@ -63,18 +63,24 @@
 
         <div class="row" style="padding-bottom: 20px; padding-top: 40px">
           <div class="col col-12 justify-content-center text-center" style="padding-bottom: 40px;">
-            <h3>Aspire Budgeting Privacy Policy</h3>
+            <h3>Aspire Budgeting Mobile Privacy Policy</h3>
           </div>
           <div class="row" style="padding-bottom: 40px;">
             <div class="col offset-md-2 col-xs-12 col-md-8">
               <b>INTRODUCTION</b>
               <br>
               Aspire Budgeting and its Developer understand that privacy is essential to the users of the Aspire
-              Budget spreadsheet ("Users", "you"). This policy describes the steps taken to maintain your privacy
-              when you visit the website <a href="https://aspirebudget.com" target="_blank">https://aspirebudget.com</a>
+              Budget mobile app ("Users", "you"). This policy describes the steps taken to maintain your privacy
+              when you visit the website <a href="https://aspirebudgetmobile.app" target="_blank">https://aspirebudgetmobile.app</a>
               (“Website”) and when you use the Aspire Budget
-              spreadsheet and packaged Google Script code (“Service”). By using the Website and Service, you agree
+              mobile app ("Mobile App"). By using the Website and Mobile App, you agree
               to the collection and use of information in accordance with this policy.
+              <br>
+              The privacy policy for the Aspire Budget Spreadsheet ("Spreadsheet") can be found on 
+              <a href-"https://aspirebudget.com" target="_blank">https://aspirebudget.com</a>.
+              The User understands that the Spreadsheet and Mobile App are two independant projects and 
+              this policy is an extension to the Spreadsheet's privacy policy and the Spreadsheet's developer
+              cannot be held accountable for the Mobile App.
             </div>
           </div>
           <div class="row" style="padding-bottom: 40px;">
@@ -97,13 +103,6 @@
                   browser, mobile device, and other such information. This type of information is considered
                   confidential and is only used for the purpose of operating, maintaining, and improving
                   features of the Website and Service.</li>
-                <ul>
-                  <li><b>Example:</b> These analytics showed that page load times were high in Australia. This
-                    was
-                    due to the fact that the images on the Website were not compressed. By compressing the
-                    images on the Website, page load times in Australia decreased from ~9 seconds to ~2
-                    seconds.</li>
-                </ul>
                 <li>The Service does not collect, maintain, or use personally identifiable information.
                 </li>
                 <li>The Service only interacts with the Personal Data that you consent and approve.
@@ -119,28 +118,21 @@
               <b>2. SERVICE AUTHORIZATION SCOPES AND PERMISSIONS</b>
               <br>
               <ul>
-                <li>Some of the Service’s Features require that Users give permission to access their Personal
+                <li>Some of the Mobile App’s Features require that Users give permission to access their Personal
                   Data or act on their behalf.</li>
                 <li>The first time one of these Features is run, you will be prompted to authorize one or more
                   permissions.</li>
                 <li>The permissions the Service uses are:</li>
                 <ul>
-                  <li><b>spreadsheets.currentonly</b></li>
+                  <li><b>https://www.googleapis.com/auth/drive</b></li>
                   <ul>
-                    <li>This permission is used for the “Localize Dates and Currency” and the “Change
-                      spreadsheet font to…” feature of the Service. In order to modify the format of data
-                      within the Aspire Budget spreadsheet, the Service needs access to the current
-                      spreadsheet.</li>
-                  </ul>
-                  <li><b>spreadsheets</b></li>
-                  <ul>
-                    <li>This permission is used for the “Migrate data from…” feature of the Service. In
-                      order for the Service to load data from a previous version of the Aspire Budget
-                      spreadsheet and migrate it to a new version, the <a
-                        href="https://developers.google.com/apps-script/reference/spreadsheet/sheet#getrangea1notation"
-                        target="_blank">getRange</a>
-                      function of the Apps
-                      Script API is needed and this function provided by the API requires this permission.
+                    <li>This permission is used by the Mobile App to be able to see and retrieve a list of files
+                      from the User's Google Drive account. In order to view content from the Aspire Budget spreadsheet, 
+                      the User must be able to select the correct spreadsheet from the list.</li>
+                      <li>
+                      In addition to above, this permission also allows the Mobile app to read data from the Spreadsheet
+                      and display it in a manner that makes sense for the mobile platform and also allows the User
+                      to update the contents of the Spreadsheet.
                     </li>
                   </ul>
                 </ul>
